@@ -1,0 +1,8 @@
+---
+
+default: -p pretty -p html -p chrome
+#-p html
+pretty: --format pretty
+html: --format html --out=reports/TestResults.html
+chrome: BROWSER=chrome
+chrome_headless: BROWSER=chrome_headless

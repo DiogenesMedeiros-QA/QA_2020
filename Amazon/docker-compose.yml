@@ -1,0 +1,10 @@
+version: '3.5'
+services:
+    test_amazon:
+      container_name: "amazon_ecommerce"
+      build:
+        context: .
+        dockerfile: Dockerfile
+      volumes:
+        - '.:/test-folder'
+      working_dir: /test-folder
